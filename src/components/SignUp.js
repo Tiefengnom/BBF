@@ -12,9 +12,9 @@ const SignUp = () => {
     const[Adress, setAdress] = useState("")
     const[PLZ, setPLZ] = useState("")
     const[mail, setMail]= useState(null)
-    const[userid, setUserid] = useState("")
+    
     const [error, setError] = useState(null)
-    const navigate = useNavigate();
+    
     const {user, setUser} = useUserContext()
     
 
@@ -44,6 +44,7 @@ const SignUp = () => {
         setAdress("")
         setPLZ("")
         setError(null)
+        console.log(error)
         
         
         console.log("Welcome, youre signed in")
